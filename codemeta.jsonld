@@ -1,16 +1,36 @@
 {
    "@context":
    {
-      "schemaorg": "http://schema.org/",
+      "schema": "http://schema.org/",
       "dcterms": "http://purl.org/dc/terms/",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "Code": "schemaorg:Code",
-      "Person": "schemaorg:Person",
-      "author":
+      "Code": "schema:Code",
+      "Person": "schema:Person",
+      "accessList": "dcterms:accessRights", 
+      "agent":
       {
-          "@id": "schemaorg:author",
+          "@id": "schema:author",
           "@type": "@id"
       },
+      "email": "schema:email",
+      "affiliation": "schema:affiliation",
+      "isCitable": "schema:isCitable",
+      "isMaintainer": "schema:ismaintainer",
+      "isRightsHolder": "schema:isRightsHolder",
+      "hasRole": 
+      {
+        "@id": "schema:role",
+        "@type": "@id"
+      },
+      "roleCode": "schema:roleCode",
+      "buildInstructions": "schema:buildInstructions",
+      "citationCount": "schema:citationCount",
+      "contributor":
+      {
+          "@id": "schema:contributor",
+          "@type": "@id"
+      },
+      "contIntegration": "schema:contIntegration" ,
       "identifier":
       {
          "@id": "dcterms:identifier",
@@ -18,18 +38,44 @@
       },
       "codeRepository":
       {
-         "@id": "schemaorg:codeRepository",
+         "@id": "schema:codeRepository",
          "@type": "@id"
       },
-      "dateCreated": "schemaorg:dateCreated",
-      "dateModified": "schemaorg:dateModified",
-      "datePublished": "schemaorg:datePublished",
-      "description": "schemaorg:description",
-      "keywords": "schemaorg:keywords",
-      "license": "schemaorg:license",
+      "email": "schema:email",
+      "name": "schema:name",
+      "affiliation": "schema:affiliation",
+      "dateCreated": "schema:dateCreated",
+      "dateModified": "schema:dateModified",
+      "datePublished": "schema:datePublished",
+      "dependency" : "schema:requirements",
+      "description": "schema:description",
+      "docsCoverage": "schema:docsCoverage",
+      "downloadCount": "schema:downloadCount",
+      "embargoDate": "schema:embargoDate",
+      "isAutomatedBuild": "schema:isAutomateBuild",
+      "tags": "schema:keywords",
+      "package": "schema:package",
+      "publisher": "schema:publisher",
+      "license": "schema:license",
+      "interactionMethod": "schema:interactionMethod",
+      "inputs": "schema:inputs",
+      "outputs": "schema:outputs",
+      "function": "schema:function",
+      "funding": "schema:funding",
+      "objectType": "dcterms:type",
+      "programmingLanguage": "schema:programmingLanguage",
+      "readme": "schema:readme",
+      "issueTracker": "schema:issueTracker",
+      "relatedLink": "schema:relatedLink",
+      "relatedPublications": "schema:relatedPublications",
+      "relationship": "schema:relationship",
+      "softwareCitation": "schema:citation",
+      "suggests": "schema:requirement",
+      "softwarePaperCitation": "schema:citation",
+      "testCoverage": "schema:testCoverage",
       "title": "dcterms:title",
-      "version": "schemaorg:version",
-      "uploadedBy": "schemaorg:Person"
+      "version": "schema:version",
+      "uploadedBy": "schema:Person",
+      "zippedCode": "schema:zippedCode"
    }
 }
-
